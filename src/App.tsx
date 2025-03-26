@@ -312,8 +312,11 @@ function App() {
             >
               {renderGrid()}
             </div>
+          </div>
 
-            <div className="flex justify-end">
+          <div className="space-y-8">
+
+            <div className="flex justify-end lg:justify-start">
               <button
                 onClick={() => setGridAreas([])}
                 className="flex gap-2 items-center px-6 py-3 text-red-500 rounded-xl border transition-colors bg-red-500/10 hover:bg-red-500/20 border-red-500/20"
@@ -322,16 +325,14 @@ function App() {
                 Reset Grid Areas
               </button>
             </div>
-          </div>
 
-          <div className="space-y-8">
             <div className="p-6 rounded-2xl border backdrop-blur-xl bg-gray-900/50 border-purple-500/20">
-              <div className="flex justify-between items-center mb-6">
-                <div className="flex gap-2 items-center">
+              <div className="flex flex-wrap justify-between items-center mb-6 sm:flex-nowrap">
+                <div className="flex gap-2 items-center mb-2 w-100 sm:w-auto">
                   <Copy className="w-5 h-5 text-purple-400" />
                   <h2 className="text-xl font-semibold">Generated Code</h2>
                 </div>
-                <div className="flex gap-4 items-center">
+                <div className="flex flex-wrap gap-4 items-center sm:flex-nowrap">
                   <div className="flex gap-2 items-center">
                     <select
                       value={showTailwind ? 'tailwind' : 'css'}
