@@ -301,7 +301,7 @@ function App() {
               </div>
             </div>
 
-            <p className="block text-gray-400 md:hidden">The grid is not mobile friendly as it involves drag-and-drop or dragging a touch screen device.</p>
+            <p className="block text-gray-400 md:hidden">The grid is not mobile friendly as it involves drag-and-drop or dragging a touch, sorry! try with a cursor!</p>
 
             <div
               className="grid p-6 rounded-2xl border backdrop-blur-xl bg-gray-900/50 grid-preview border-purple-500/20"
